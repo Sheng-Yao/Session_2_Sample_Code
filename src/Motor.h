@@ -42,3 +42,9 @@ void motorSetup(){
     analogWrite(motor1Speed,leftSpeedVal);
     resetMotor1();
 }
+
+// How to use?
+// motorSetup(); in setup
+
+// resetMotor1(); to stop the motor
+// goForwardMotor1(); to move the motor

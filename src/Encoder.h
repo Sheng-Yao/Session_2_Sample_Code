@@ -41,3 +41,9 @@ float getMovingDistance(){
 void resetDistance(){
     pulses = 0;
 }
+
+// How to use?
+// encoderSetup(); in setup
+
+// Serial.println(String(getMovingDistance())); to access the distance travel
+// resetDistance(); once you want to reset the distance counter

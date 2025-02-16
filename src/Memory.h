@@ -29,3 +29,8 @@ String memoryRead(){
     }
     return buffer;
 }
+
+// How to use?
+// memoryReset(); to reset the existing memory
+// memoryWrite(input message); to store value in EEPROM
+// memoryRead(); to reset values from existing memory

@@ -80,3 +80,9 @@ void update(){
     angle = round(yaw*10)/10.0; //if you mounted MPU6050 in a different orientation to me, angle may not = roll. It can roll, pitch, yaw or minus version of the three
     //for me, turning right reduces angle. Turning left increases angle.
 }
+
+// HOW to use?
+// mpuSetup(); in setup
+
+// update(); in loop
+// Serial.println(String(angle)); to access the angle

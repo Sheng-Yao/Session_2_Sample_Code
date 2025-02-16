@@ -26,3 +26,8 @@ float getDistance(){
     digitalWrite(frontTrig,LOW);
     return (pulseIn(frontEcho,HIGH) * 0.034613 / 2.00);
 }
+
+// How to use?
+// ultrasonicSetup(); in setup
+
+// getDistance(); to obtain distance
