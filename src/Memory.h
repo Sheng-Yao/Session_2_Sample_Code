@@ -22,7 +22,7 @@ String memoryRead(){
     String buffer = "";
     for(int i = 0; i < EEPROM.length(); i++){
         if(EEPROM.read(i) != 0){
-            buffer += EEPROM.read(i);
+            buffer += char(EEPROM.read(i));
         }else{
             break;
         }
