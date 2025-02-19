@@ -26,7 +26,7 @@ void getOrientation(){
     Wire.endTransmission(false);
     Wire.requestFrom(MPU, 2, true);
     gyroOutputBuffer = (Wire.read() << 8 | Wire.read()) * GYRO_SCALE;  // get z rotation (yaw)
-    Serial.println(String(gyroOutputBuffer));
+    // Serial.println(String(gyroOutputBuffer));
 }
 
 
@@ -63,9 +63,10 @@ void mpuSetup(){
 }
 
 
-float elapsedTime, currentTime, previousTime = millis();
+float elapsedTime, previousTime;
+float currentTime = millis();
 float yaw;
-float angle = 0;
+volatile float angle = 0;
 
 void update(){
     // === Read gyroscope (on the MPU6050) data === //
